@@ -1,0 +1,19 @@
+
+body {
+    /* adding an image as the background  */
+    background-image: url("bgac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#canvas{
+    
+    /* to place the object the center of the webpage */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%)
+
+    
+}
