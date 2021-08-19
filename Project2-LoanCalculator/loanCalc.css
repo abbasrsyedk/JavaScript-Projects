@@ -1,0 +1,56 @@
+
+body {
+    /* adding an image as the background  */
+    background-image: url("bglc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#loanCalc{
+    width: 400px;
+    height: 500px;
+    /* background-color: #000; */
+    /* color: #fff; */
+    /* margin-left: 275px;
+    margin-top: 95px;*/
+    padding-left: 90px;
+    padding-top: 20px; 
+
+    /* to center the object above */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%)
+
+
+}
+
+#months{
+    width: 175px;
+    height: 30px;
+}
+
+#amount{
+    width: 175px;
+    height: 30px;
+}
+#interest_rate{
+    /* margin-left:2px; */
+    width: 175px;
+    height: 30px;
+}
+
+h1{
+    font-size:50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#name{
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%)
+}
