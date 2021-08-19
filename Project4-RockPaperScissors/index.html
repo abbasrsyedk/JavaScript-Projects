@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking the css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Rock Paper and Scissors</title>
+</head>
+
+<body>
+
+    <!-- creating a section tag in which we store multiple divs
+    1.game
+    2.score,player-score,bot-score
+    3.intro
+    4.match,winner,hands,options -->
+
+    <section class="game">
+    <!-- score div starts here that stores the player score and bot score divs -->
+
+    <!-- score is basically the scorecard that is displayed above -->
+        <div class="score">
+
+            <div class="player-score">
+            <h2>Player</h2>
+            <p>0</p>            
+            </div>
+
+            <div class="bot-score">
+            <h2>Bot</h2>
+            <p>0</p> 
+            </div>
+        
+        </div>
+
+        <!-- the intro div -->
+        <div class="intro">
+            <h1>Rock Paper and Scissors</h1>
+            <!-- the lets go button -->
+            <button>Let's Go!</button>
+        </div>
+
+        <!-- the match div starts here and contains the winner class and hands,options divs -->
+        <div class="match fadeOut">
+            <h2 class="winner">Choose an option</h2>
+            
+            <!-- hands belongs to the iamges shows on screen -->
+            <div class="hands">
+                <!-- player hand -->
+                <img class="player-hand" src="./images/rock.png">
+                <!-- bot hand -->
+                <img class="bot-hand" src="./images/rock.png">
+
+                </div>
+        
+        <!-- options belongs to the options the player has to select  -->
+            <div class="options">
+            <!-- rock button -->
+                <button class="rock">rock</button>
+            <!-- paper button -->
+                <button class="paper">paper</button>
+            <!-- scissors button -->
+                <button class="scissors">scissors</button>
+            </div>
+        </div>
+        <!-- <p class="intro">Refresh the page for a restart</p> -->
+    </section>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
