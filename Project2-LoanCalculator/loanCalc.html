@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this line is to refresh the page every 1 second -->
+    <!-- <meta http-equiv="refresh" content="1"> -->
+
+    <!-- linking the css file -->
+    <link rel="stylesheet" type="text/css" href="loanCalc.css">
+
+    <title>Loan Calculator</title>
+</head>
+<body>
+    
+    <div id="loanCalc">
+        <h1><font face = "Bedrock" size="10">LOAN CALCULATOR</font></h1>
+
+        <!-- loan amount -->
+        <p><font face = "Bedrock" size = "5">Loan Amount : ₹  </font><input id="amount" type="number"  min="1" max= "99999999"  onchange="computeLoan()"></p>
+        <!-- interest rate -->
+        <p><font face = "Bedrock" size = "5">Interest Rate :  %  </font><input id = "interest_rate" type = "number"  min = "0"  max = "100" placeholder="min 0.1" step=".1"  onchange="computeLoan()"></p>
+        <!-- time  -->
+        <p><font face = "Bedrock" size = "5">Time( months ) :  </font><input id = "months" type="number"  min="1"  max="240" placeholder="min 1" step="1" onchange="computeLoan()"></p>
+
+        <h2 id="payment"> </h2>
+        <h3 id="name">- R S K Abbas</h3>
+    </div>
+
+<!-- javascript code -->
+    <script src = "loanCalc.js"> </script>
+
+</body>
+</html>
