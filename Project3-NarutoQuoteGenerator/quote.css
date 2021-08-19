@@ -1,0 +1,44 @@
+body{
+    /* adding an image as the background  */
+    background-image: url("641642.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div{
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+    color: #f6d365;
+}
+
+p{
+    font-size: 35px;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* button code for hover to invert */
+
+.btn {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: orange;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
