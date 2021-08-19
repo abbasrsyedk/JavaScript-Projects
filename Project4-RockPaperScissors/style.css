@@ -1,0 +1,169 @@
+*{
+    /* best practice is to do this regularly */
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+
+}
+body{
+    background-image: url("./images/bgrps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    /* the entire screen */
+    height:100vh;
+    /* background-color: rgb(112, 29, 94); */
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* the text and colors of the scorecard */
+.score{
+    color:rgba(255, 255, 255, 0.678);
+    height:20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score h2{
+    font-size: 30px;
+}
+
+.score p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.intro{
+    color:rgba(255, 255, 255, 0.678);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* opacity: 0; */
+    /* adding transition when lets go button is clicked */
+    transition: opacity 0.5s ease;
+}
+
+.intro h1{
+    font-size: 50px;
+}
+
+/* designing the buttons */
+.intro button,
+.match button {
+    width:150px;
+    height:50px;
+    background:none;
+    border:none;
+    color:rgba(255, 255, 255, 0.678);
+    font-size: 20px;
+    background-color: rgb(50,120,100);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* centering the play area */
+.match{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.winner{
+    color: rgba(255, 255, 255, 0.678);
+    text-align: center;
+    font-size: 50px;
+}
+
+.hands, .options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-hand{
+    /* to mirror the image */
+    transform: rotateY(180deg);
+}
+
+div.fadeOut{
+    /* cannot click */
+    opacity:0;
+    pointer-events: none;
+}
+
+div.fadeIn{
+    opacity:1;
+    pointer-events: all;
+}
+
+
+@keyframes shakePlayer {
+
+    0%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    15%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    25%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    40%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    55%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    70%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    85%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+    90%{
+        transform: rotateY(180deg) translateY(-50px);
+    }
+    100%{
+        transform: rotateY(180deg) translateY(0px);
+    }
+}
+
+@keyframes shakeBot {
+
+    0%{
+        transform:translateY(0px);
+    }
+    15%{
+        transform:translateY(-50px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-50px);
+    }
+    55%{
+        transform: translateY(0px);
+    }
+    70%{
+        transform: translateY(-50px);
+    }
+    85%{
+        transform: translateY(0px);
+    }
+    90%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
